@@ -1,9 +1,9 @@
-# RHCE Practice Env (RHEL9)
+## RHCE Practice Env (RHEL9)
 
-## Purpose
+### Purpose
 The purpose of this project is to help individuals preparing for the RHCE exam by providing a practice environment that simulates real exam conditions.
 
-## Prerequisites
+### Prerequisites
 1. **VirtualBox**
  - [Install VirtualBox depending on your operating system.](https://www.virtualbox.org/wiki/Download_Old_Builds)
  - [Install the VirtualBox Extension Pack that matches your installed version.](https://www.virtualbox.org/wiki/Download_Old_Builds)
@@ -23,7 +23,7 @@ vagrant plugin install vagrant-guest-ansible
 - [Install python depending on your operatingsystem.](https://www.python.org/downloads/)
 
 
-## Deployment
+### Deployment
 
 Once the above software is installed, Do the following.
 
@@ -47,12 +47,12 @@ cd rhceenv
 
 _Now the deployment should be up and running!_
 
-## Useful Informations:
+### Useful Informations:
 Deployment should take around 20 minutes depending on your computer and the internet speed. The first time you run the vagrant up command, it will download the OS images for later use. In other words, it will take longest the first time around but will be faster when it is deployed again.You can run `vagrant destroy -f` to destroy your environment at anytime. **This will erase everything**. This environment is meant to be reuseable, If you run the `vagrant up` command after destroying the environment, the OS image will already be downloaded and environment will deploy faster.
 
  You shouldn't need to access the IPA server during your practice exams. Everything should be provided that you would normally need during an actual exam. Hope this helps in your studies!You can also use the VirtualBox console to interact with the VMs or through a terminal. **If you need to reset the root password, you would need to use the console.**
 
-## Notable Vagrant Commands to control the environment:
+### Notable Vagrant Commands to control the environment:
 - `vagrant up` - Boots and provisions the environment
 - `vagrant destroy vm-name` - To destroy a Virtual Machine
 - `vagrant destroy -f` - Shuts down and destroys all the Virtual Machines
@@ -63,7 +63,7 @@ Deployment should take around 20 minutes depending on your computer and the inte
 - `vagrant box remove box/name` - To remove a box
 
 
-## Included systems:
+### Included systems:
 - repo.lab.example.com
 - control.lab.example.com
 - node1.lab.example.com
@@ -71,7 +71,7 @@ Deployment should take around 20 minutes depending on your computer and the inte
 - node3.lab.example.com
 - node4.lab.example.com
 
-## System Details:
+### System Details:
 > control
 - 192.168.55.200
 - Gateway - 192.168.55.1
@@ -93,23 +93,23 @@ Deployment should take around 20 minutes depending on your computer and the inte
 - Gateway - 192.168.55.1
 - DNS - 8.8.8.8
 
-## Repo
+### Repo
 There is a Repo available to use from `http://repo.lab.example.com/BaseOS` and `http://repo.lab.example.com/AppStream`
 
-## Accessing the systems
+### Accessing the systems
 The IP addresses to your local host file if you want to connect to the guest systems with the hostname.
 
-## Credentials
+### Credentials
 Username - vagrant
 Password - vagrant
 
 - For root - use `sudo` or `sudo su`
 Access example - `ssh user@192.168.55.201` or `vagrant ssh system`
 
-## Help
+### Help
 If you're having problems with the environment, please submit an issue by going to the `ISSUES` tab at the top. If you have more questions, looking for practice exams to use against this environment, or just looking for a fantastic Red Hat community to join to get your questions answered, check out the Red Hat Certs Slack Workspace. You can find the invite link at the top of this page next to the description.
 
-## Outcome.
+### Outcome.
 Deploy a virtual environment on RHEL9 with predefined configurations, minimizing manual setup time.
 
-__Powered by Ansible and Vagrant__
+_Powered by Ansible and Vagrant_
