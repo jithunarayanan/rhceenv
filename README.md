@@ -1,4 +1,4 @@
-# RHCE Automated Practice Env (RHEL9)
+# RHCE Practice Env (RHEL9)
 
 ## Purpose
 The purpose of this project is to help individuals preparing for the RHCE exam by providing a practice environment that simulates real exam conditions.
@@ -8,7 +8,7 @@ The purpose of this project is to help individuals preparing for the RHCE exam b
  - [Install VirtualBox depending on your operating system.](https://www.virtualbox.org/wiki/Download_Old_Builds)
  - [Install the VirtualBox Extension Pack that matches your installed version.](https://www.virtualbox.org/wiki/Download_Old_Builds)
 
- >>**NOTE2:** VirtualBox 7, 6, 5, 4 only supported. **(Latest version of VirtualBox (7.1) is not supported)**
+ >**NOTE:** VirtualBox 7, 6, 5, 4 only supported. **(Latest version of VirtualBox (7.1) is not supported)**
 
 2. **Vagrant**
 - [Install latest version of Vagrant depending on your operating system.]((https://www.vagrantup.com/downloads.html))
