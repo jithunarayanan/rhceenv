@@ -1,4 +1,4 @@
-# RHCE Automated Practice Deployment (RHEL9)
+# RHCE Automated Practice Env (RHEL9)
 
 ## Purpose
 The purpose of this project is to help individuals preparing for the RHCE exam by providing a practice environment that simulates real exam conditions.
